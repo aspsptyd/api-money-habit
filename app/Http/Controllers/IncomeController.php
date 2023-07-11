@@ -8,14 +8,25 @@ class IncomeController extends Controller
 {
     public function index()
     {
-        $posts = Income::all();
+        $income = Income::all();
 
-        $response = [
-            'code' => 200,
-            'msg' => 'List data income',
-            'data_income' => $posts
-        ];
+        if ($income != '[]') {
+            $code = 200;
+            $response = [
+                'status' => true,
+                'msg' => 'Data invome available',
+                'data_income' => $income
+            ];
+        } else {
+            $code = 200;
+            $response = [
+                'status' => false,
+                'msg' => 'Tidak ada data income',
+            ];
+        }
 
-        return response()->json($response); 
+        
+
+        return response()->json($response, $code); 
     }
 }
