@@ -5,3 +5,6 @@ Backend API Project Money Habit v1.0
 
 ## Untuk Menginstallkan Aplikasi ke Komputer
 Pertama, Clone proyek -> lalu kemudian buka proyek di VSCode atau Kode Editor bebas -> Buka terminal -> ketik `composer install` -> tunggu hingga proses selesai
+
+## Untuk Running Aplikasi Agar bisa Diakses Oleh Local Client
+Ketikkan command berikut `php artisan serve --host=192.168.224.237 --port=8089`, Untuk IP dan Port Disesuaikan
