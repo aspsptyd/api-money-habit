@@ -25,8 +25,6 @@ class IncomeController extends Controller
             ];
         }
 
-        
-
         return response()->json($response, $code); 
     }
 }
